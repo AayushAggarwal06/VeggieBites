@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VeggieBites - Vegetarian Recipes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">VeggieBites</div>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#recipes">Recipes</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+                <button id="themeToggleBtn">🌙</button>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <h1>Delicious Vegetarian Recipes</h1>
+            <p>Explore easy and healthy vegetarian dishes!</p>
+        </section>
+
+        <!-- Search Bar Section -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search recipes... 🍲">
+        </div>
+
+    </header>
+
+    <main>
+        <!-- Recipe-Section -->
+        <section id="recipes" class="recipes-section">
+            <h2>Popular Vegetarian Recipes</h2>
+            <div class="recipe-grid">
+            </div>
+        </section>
+
+        <!-- About-Section -->
+        <section class="about-section">
+            <h2>About Us</h2>
+            <p>
+                Welcome to VeggieDelight — your one-stop destination for delicious and healthy vegetarian recipes!
+                We aim to bring simple, flavorful, and nutritious recipes that anyone can cook at home.
+            </p>
+        </section>
+
+        <!-- Contact-Form -->
+        <section class="contact-section" id="contact">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Your Email" required />
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 VeggieDelight. All rights reserved.</p>
+        <div class="socials">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </footer>
+
+
+    <!-- Modal Placeholder -->
+    <div class="modal" id="recipeModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Recipe Title</h2>
+            <p>Ingredients and steps go here...</p>
+        </div>
+    </div>
+
+    <!-- Back-To-Top -->
+    <button id="backToTop" title="Go to top">↑</button>
+
+    <!-- JS Script -->
+    <script defer src="script.js"></script>
+</body>
+
+</html>
